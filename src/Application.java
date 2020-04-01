@@ -21,6 +21,7 @@ public class Application {
 
     private Operation operation() {
         showMenu();
+
         switch (scanner.nextInt()){
             case 1: return new Plus();
             case 2: return new Minus();
