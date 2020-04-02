@@ -14,14 +14,15 @@ public class Application {
             if (calc == null) {
                 break;
             }
-            calc.calculate(10,5);
+            System.out.print("Enter the numbers --> ");
+            calc.calculate(scanner.nextInt(),scanner.nextInt());
             return;
         }
     }
 
     private Operation operation() {
         showMenu();
-
+        System.out.print("Make your choise -->  ");
         switch (scanner.nextInt()){
             case 1: return new Plus();
             case 2: return new Minus();
